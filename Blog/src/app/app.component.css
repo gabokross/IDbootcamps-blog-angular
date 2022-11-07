@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
+
+.container {
+    font-family: 'Londrina Solid', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: linear-gradient(180deg, #efd5ff 0%, #515ada 100%);
+}
