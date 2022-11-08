@@ -1,5 +1,25 @@
-.glob {
-    background-image: linear-gradient(180deg, rgba(156, 252, 248, 0.5) 11.2%, rgba(110, 123, 251, 1) 91.1%);
-    border-radius: 35%;
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;500&display=swap');
 
+.postboard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+.glob {
+    width: 750px;
+    height: auto;
+    padding: 25px;
+    font-size: 1em;
+    font-family: 'Encode Sans';
+    color: aliceblue;
+    background: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    border: 2px solid rgba(209, 213, 219, 0.3);
 }

@@ -1,9 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;500&display=swap');
+
+.container .sidebar {
+    display: flex;
+    width: 400px;
+    height: 100vh;
+    margin: auto 0;
+    background-color: black;
+    font-family: 'Londrina Solid';
+    color: aliceblue;
+}
 
 .container {
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Encode Sans';
+    color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    background: linear-gradient(180deg, #efd5ff 0%, #515ada 100%);
-}
+    background-color: #1a3759;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(210.55, 95%, 66%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(272.13, 77%, 60%) 0, transparent 55%);
+
+} */
