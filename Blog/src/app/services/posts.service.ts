@@ -56,7 +56,12 @@ export class PostsService {
     this.arrPosts.push(pPost);
   }
 
+
   getByCategory(pCategory: string): Post[] {
     return this.arrPosts.filter(post => post.category === pCategory);
   }
+
+
+
+
 }

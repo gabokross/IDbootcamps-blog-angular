@@ -7,6 +7,16 @@
     flex-direction: column;
     gap: 25px;
     justify-content: center;
+    font-family: 'Encode Sans';
+    color: aliceblue;
+}
+
+.postboard .categories {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    cursor: pointer;
+    width: 200px;
 }
 
 

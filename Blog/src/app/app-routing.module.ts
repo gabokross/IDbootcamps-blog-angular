@@ -6,6 +6,7 @@ import { PostformComponent } from './components/postform/postform.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: IndexComponent },
+  { path: 'index', component: IndexComponent },
   { path: 'posts', component: PostboardComponent },
   { path: 'new', component: PostformComponent }
   //crear error 404

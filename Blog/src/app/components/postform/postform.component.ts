@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Post } from 'src/app/interfaces/post.interface';
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
   selector: 'app-postform',
@@ -11,7 +14,10 @@ export class PostformComponent implements OnInit {
 
   newPostForm: FormGroup;
 
-  constructor() {
+  constructor(
+    private postsService: PostsService,
+    private router: Router
+  ) {
     this.newPostForm = new FormGroup({
       title: new FormControl('', [
         Validators.required,
@@ -25,8 +31,8 @@ export class PostformComponent implements OnInit {
         Validators.required,
         Validators.maxLength(50)
       ]),
-      category: new FormControl(),
-      date: new FormControl()
+      date: new FormControl(),
+      category: new FormControl()
     });
   }
 
@@ -35,6 +41,9 @@ export class PostformComponent implements OnInit {
 
   onSubmit() {
     console.log(this.newPostForm.value);
+    // this.newPostForm.date = new Date(this.newPostForm.date!);
+    // this.postsService.createPost(this.newPostForm);
+    this.router.navigate(['/posts']);
   }
 
   checkError(field: string, error: string): boolean | undefined {

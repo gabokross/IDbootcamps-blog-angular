@@ -18,4 +18,16 @@ export class PostboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  filterbyCategory(pCategory: string): Post[] {
+    const result: string[] = [];
+    for (let post of this.postsList) {
+      if (!result.includes(post.category!)) {
+        result.push(post.category!);
+        console.log(result)
+      }
+    }
+    return this.postsList.filter(post => post.category === pCategory);
+  }
+
 }

@@ -1,0 +1,22 @@
+.hero {
+    font-family: 'Encode Sans';
+    color: aliceblue;
+}
+
+.hero h1 {
+    font-family: 'Londrina Solid';
+    color: aliceblue;
+    font-size: 15em;
+    margin-top: 15px;
+}
+
+.hero i {
+    margin-left: 60px;
+}
+
+.hero p {
+    width: 900px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 3em;
+}

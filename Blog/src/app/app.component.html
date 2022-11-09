@@ -1,10 +1,27 @@
 <div class="container">
   <header class="sidebar">
+
     <div>
-      <h1>glob!</h1>
+      <h1 [routerLink]="['index']">glob!</h1>
     </div>
+
+    <nav>
+      <ul class="postmenu">
+        <li [routerLink]="['posts']">my globs</li>
+        <li [routerLink]="['new']">create new glob</li>
+      </ul>
+    </nav>
 
   </header>
 
+  <div class="content">
+    <nav>
+      <ul class="loginmenu">
+        <li>login</li>
+        <li>register</li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
 
-  <router-outlet></router-outlet>
+</div>
