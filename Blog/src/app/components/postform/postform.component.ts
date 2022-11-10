@@ -21,7 +21,7 @@ export class PostformComponent implements OnInit {
     this.newPostForm = new FormGroup({
       title: new FormControl('', [
         Validators.required,
-        Validators.maxLength(50)
+        Validators.maxLength(30)
       ]),
       message: new FormControl('', [
         Validators.required,
@@ -29,7 +29,7 @@ export class PostformComponent implements OnInit {
       ]),
       author: new FormControl('', [
         Validators.required,
-        Validators.maxLength(50)
+        Validators.maxLength(30)
       ]),
       date: new FormControl(),
       category: new FormControl()
@@ -40,9 +40,8 @@ export class PostformComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.newPostForm.value);
-    // this.newPostForm.date = new Date(this.newPostForm.date!);
-    // this.postsService.createPost(this.newPostForm);
+    this.postsService.createPost(this.newPostForm.value);
+    localStorage.setItem('newPost', this.newPostForm.value)
     this.router.navigate(['/posts']);
   }
 

@@ -1,6 +1,5 @@
-<div class="container">
+<div class="wrapper">
   <header class="sidebar">
-
     <div>
       <h1 [routerLink]="['index']">glob!</h1>
     </div>
@@ -11,7 +10,6 @@
         <li [routerLink]="['new']">create new glob</li>
       </ul>
     </nav>
-
   </header>
 
   <div class="content">
@@ -21,7 +19,9 @@
         <li>register</li>
       </ul>
     </nav>
-    <router-outlet></router-outlet>
+    <div class="componentweb">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
 </div>

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;500&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .postboard {
+    margin-left: 220px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -9,6 +16,8 @@
     justify-content: center;
     font-family: 'Encode Sans';
     color: aliceblue;
+    padding-left: 200px;
+    padding-top: 100px;
 }
 
 .postboard .categories {

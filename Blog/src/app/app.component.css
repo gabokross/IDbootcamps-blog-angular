@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;500&display=swap');
 
-.container {
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.wrapper {
     background-image: linear-gradient(300deg, rgba(62, 161, 219, 1) 11.2%, rgba(93, 52, 236, 1) 100.2%);
-
+    width: 100%;
 }
 
 .sidebar {
-    display: flex;
+    /* display: flex; */
     position: fixed;
-    width: 220px;
+    width: max-content;
     height: 100%;
     overflow: auto;
-    margin: auto 0;
     flex-wrap: wrap;
     gap: 10px;
     background: rgba(255, 255, 255, .15);
@@ -23,22 +26,46 @@
     border: 2px solid rgba(209, 213, 219, 0.3);
 }
 
+
 .sidebar h1 {
     cursor: pointer;
     font-family: 'Londrina Solid';
     color: aliceblue;
-    margin: 60px;
+    margin: 20px 30px 20px 70px;
 }
+
 
 .sidebar .postmenu {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 150px;
-    margin: 30px;
+    width: 215px;
     gap: 20px;
     font-family: 'Encode Sans';
     color: aliceblue;
+    margin: 0 auto;
+}
+
+.sidebar .postmenu li {
+    transition: .3s;
+    border-radius: 5px;
+    width: 215px;
+    text-align: center;
+}
+
+.sidebar .postmenu li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 2px solid rgba(209, 213, 219, 0.3);
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    padding: 15px 16px;
 }
 
 .content .loginmenu {
@@ -46,21 +73,28 @@
     flex-direction: row;
     list-style: none;
     margin-left: 600px;
-    gap: 30px;
     font-family: 'Encode Sans';
     color: aliceblue;
 }
 
-nav ul li {
-    transition: 1s;
+.content .loginmenu li {
+    transition: .3s;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+
 }
 
-nav ul li:hover {
+.content .loginmenu li:hover {
     cursor: pointer;
+    background: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 2px solid rgba(209, 213, 219, 0.3);
 }
 
-.content {
-    margin-left: 500px;
-    padding: 1px 16px;
-    height: 1000px;
-}
+/* .content .componentweb {
+    padding: 100px 200px;
+
+} */

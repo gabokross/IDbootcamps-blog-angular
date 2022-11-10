@@ -19,15 +19,16 @@ export class PostboardComponent implements OnInit {
   }
 
 
-  filterbyCategory(pCategory: string): Post[] {
-    const result: string[] = [];
-    for (let post of this.postsList) {
-      if (!result.includes(post.category!)) {
-        result.push(post.category!);
-        console.log(result)
-      }
-    }
-    return this.postsList.filter(post => post.category === pCategory);
+  filterbyCategory(pCategory: string) {
+    // const result: string[] = [];
+    // for (let post of this.postsList) {
+    //   if (!result.includes(post.category!)) {
+    //     result.push(post.category!);
+    //     console.log(result)
+    //   }
+    // }
+    // return this.postsList.filter(post => post.category === pCategory);
+    this.postsList = this.postService.getByCategory(pCategory)
   }
 
 }
