@@ -12,7 +12,6 @@
 }
 
 .sidebar {
-    /* display: flex; */
     position: fixed;
     width: max-content;
     height: 100%;
@@ -44,6 +43,7 @@
     font-family: 'Encode Sans';
     color: aliceblue;
     margin: 0 auto;
+    padding-top: 300px;
 }
 
 .sidebar .postmenu li {
@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-left: 600px;
+    justify-content: right;
     font-family: 'Encode Sans';
     color: aliceblue;
 }
@@ -80,7 +80,7 @@
 .content .loginmenu li {
     transition: .3s;
     border-radius: 5px;
-    width: 150px;
+    width: 100px;
     text-align: center;
 
 }

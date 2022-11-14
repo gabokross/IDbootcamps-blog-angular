@@ -23,14 +23,21 @@
 .postboard .categories {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 85px;
     cursor: pointer;
     width: 200px;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 50px;
 }
 
 
 .glob {
-    width: 750px;
+    width: 600px;
     height: auto;
     padding: 25px;
     font-size: 1em;

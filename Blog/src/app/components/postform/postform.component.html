@@ -1,39 +1,41 @@
 <div class="postform">
     <form [formGroup]="newPostForm" (ngSubmit)="onSubmit()">
-        <div class="col-6 mb-3">
-            <label class="form-label">title</label>
-            <input type="text" class="form-control" formControlName="title">
-            <p class="error" *ngIf="checkError('title', 'required')">you have to write a title for your glob!</p>
-            <p class="error" *ngIf="checkError('title', 'maxlength')">your title is too long!</p>
-        </div>
-        <div class="col-6 mb-3">
-            <label class="form-label">message</label>
-            <textarea cols="20" rows="5" class="form-control" formControlName="message"></textarea>
-            <p class="error" *ngIf="checkError('message', 'required')">your glob has to be filled with some characters!</p>
-            <p class="error" *ngIf="checkError('message', 'maxlength')">your message is too long!</p>
-        </div>
-        <div class="col-6 mb-3">
-            <label class="form-label">author</label>
-            <input type="text" class="form-control" formControlName="author">
-            <p class="error" *ngIf="checkError('author', 'required')">don't be anonymous, put your name!</p>
-            <p class="error" *ngIf="checkError('author', 'maxlength')">your name can't be so long!</p>
-        </div>
-        <div class="col-3 mb-3">
-            <label class="form-label">category</label>
-            <select class="form-select" formControlName="category">
-                <option value="me">me</option>
-                <option value="friends">friends</option>
-                <option value="family">family</option>
-                <option value="planet">planet</option>
-                <option value="glob">glob</option>
-            </select>
-        </div>
-        <div class="col-3 mb-3">
-            <label class="form-label">date</label>
-            <input type="date" class="form-control" formControlName="date">
-        </div>
-        <div>
-            <input type="submit" value="glob it!" class="btn btn-secondary">
+        <div class="formbox">
+            <div class="col-6 mb-3">
+                <label class="form-label">title</label>
+                <input type="text" class="form-control" formControlName="title">
+                <p class="error" *ngIf="checkError('title', 'required')">you have to write a title for your glob!</p>
+                <p class="error" *ngIf="checkError('title', 'maxlength')">your title is too long!</p>
+            </div>
+            <div class="col-6 mb-3">
+                <label class="form-label">message</label>
+                <textarea cols="20" rows="5" class="form-control" formControlName="message"></textarea>
+                <p class="error" *ngIf="checkError('message', 'required')">your glob has to be filled with some characters!</p>
+                <p class="error" *ngIf="checkError('message', 'maxlength')">your message is too long!</p>
+            </div>
+            <div class="col-6 mb-3">
+                <label class="form-label">author</label>
+                <input type="text" class="form-control" formControlName="author">
+                <p class="error" *ngIf="checkError('author', 'required')">don't be anonymous, put your name!</p>
+                <p class="error" *ngIf="checkError('author', 'maxlength')">your name can't be so long!</p>
+            </div>
+            <div class="col-3 mb-3">
+                <label class="form-label">category</label>
+                <select class="form-select" formControlName="category">
+                    <option value="me">me</option>
+                    <option value="friends">friends</option>
+                    <option value="family">family</option>
+                    <option value="planet">planet</option>
+                    <option value="glob">glob</option>
+                </select>
+            </div>
+            <div class="col-3 mb-3">
+                <label class="form-label">date</label>
+                <input type="date" class="form-control" formControlName="date">
+            </div>
+            <div>
+                <input type="submit" value="glob it!" class="btn btn-info">
+            </div>
         </div>
     </form>
 </div>

@@ -1,18 +1,28 @@
 <div class="postboard">
     <h2 class="">my globs</h2>
     <ul class="categories">
-        <li (click)="filterbyCategory('me')">me</li>
-        <li (click)="filterbyCategory('friends')">friends</li>
-        <li (click)="filterbyCategory('family')">family</li>
-        <li (click)="filterbyCategory('planet')">planet</li>
-        <li (click)="filterbyCategory('glob')">glob</li>
+        <li (click)="filterbyCategory('me')">
+            <img src="../../../assets/icons/me.png" class="icon">me
+        </li>
+        <li (click)="filterbyCategory('friends')">
+            <img src="../../../assets/icons/friends.png" class="icon">friends
+        </li>
+        <li (click)="filterbyCategory('family')">
+            <img src="../../../assets/icons/family.png" class="icon">family
+        </li>
+        <li (click)="filterbyCategory('planet')">
+            <img src="../../../assets/icons/planet.png" class="icon">planet
+        </li>
+        <li (click)="filterbyCategory('glob')">
+            <img src="../../../assets/icons/glob.png" class="icon">glob
+        </li>
     </ul>
 
     <div class="glob" *ngFor="let post of postsList">
         <h3>{{post.title}}</h3>
         <p>{{post.message}}</p>
         <p>{{post.author}}</p>
-        <p>{{post.date}}</p>
+        <p>{{post.date | date: 'dd MMM yy'}}</p>
         <p>{{post.category}}</p>
     </div>
 </div>

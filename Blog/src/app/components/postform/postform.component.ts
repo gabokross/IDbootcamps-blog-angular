@@ -41,7 +41,6 @@ export class PostformComponent implements OnInit {
 
   onSubmit() {
     this.postsService.createPost(this.newPostForm.value);
-    localStorage.setItem('newPost', this.newPostForm.value)
     this.router.navigate(['/posts']);
   }
 
